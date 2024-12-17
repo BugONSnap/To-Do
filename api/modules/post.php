@@ -1,14 +1,16 @@
 <?php
-require_once __DIR__ . '/../config/connection.php';
 
-class TodoPost {
+class TodoPost
+{
     private $pdo;
 
-    public function __construct($pdo) {
+    public function __construct($pdo)
+    {
         $this->pdo = $pdo;
     }
 
-    public function createTodo($title, $description, $due_date, $user_id) {
+    public function createTodo($title, $description, $due_date, $user_id)
+    {
         try {
             $this->pdo->beginTransaction();
 
@@ -33,7 +35,8 @@ class TodoPost {
         }
     }
 
-    public function updateTodo($todo_id, $title, $description, $status, $due_date, $user_id) {
+    public function updateTodo($todo_id, $title, $description, $status, $due_date, $user_id)
+    {
         try {
             // Verify ownership
             $stmt = $this->pdo->prepare(
@@ -60,7 +63,8 @@ class TodoPost {
         }
     }
 
-    public function deleteTodo($todo_id, $user_id) {
+    public function deleteTodo($todo_id, $user_id)
+    {
         try {
             // Verify ownership
             $stmt = $this->pdo->prepare(
@@ -80,18 +84,19 @@ class TodoPost {
         }
     }
 
-    public function registerUser($username, $email, $password) {
+    public function registerUser($username, $email, $password)
+    {
         try {
             $password_hash = password_hash($password, PASSWORD_DEFAULT);
-            
+
             $stmt = $this->pdo->prepare(
                 "INSERT INTO users (username, email, password_hash, created_at) 
                  VALUES (?, ?, ?, NOW())"
             );
-            
+
             if ($stmt->execute([$username, $email, $password_hash])) {
                 return [
-                    "success" => true, 
+                    "success" => true,
                     "user_id" => $this->pdo->lastInsertId()
                 ];
             }
@@ -104,4 +109,4 @@ class TodoPost {
             return ["success" => false, "error" => $e->getMessage()];
         }
     }
-} 
+}

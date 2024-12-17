@@ -1,14 +1,16 @@
 <?php
-require_once __DIR__ . '/../config/connection.php';
 
-class TodoGet {
+class TodoGet
+{
     private $pdo;
 
-    public function __construct($pdo) {
+    public function __construct($pdo)
+    {
         $this->pdo = $pdo;
     }
 
-    public function getAllTodos($user_id) {
+    public function getAllTodos($user_id)
+    {
         try {
             $stmt = $this->pdo->prepare(
                 "SELECT t.* FROM todos t 
@@ -22,7 +24,8 @@ class TodoGet {
         }
     }
 
-    public function getTodoById($todo_id, $user_id) {
+    public function getTodoById($todo_id, $user_id)
+    {
         try {
             $stmt = $this->pdo->prepare(
                 "SELECT t.* FROM todos t 
@@ -35,4 +38,4 @@ class TodoGet {
             return ["error" => $e->getMessage()];
         }
     }
-} 
+}

@@ -1,6 +1,6 @@
-import type { Todo, LoginResponse, ApiResponse } from '$lib/types';
+import type { Todo, LoginResponse, ApiResponse } from './types.ts';
 
-const BASE_URL = '/api';
+const BASE_URL = 'http://localhost/To-Do/api';
 
 export async function login(username: string, password: string): Promise<LoginResponse> {
     const response = await fetch(`${BASE_URL}/auth/login`, {

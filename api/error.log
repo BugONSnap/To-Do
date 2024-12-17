@@ -28,3 +28,61 @@ Stack trace:
 #0 C:\xampp\htdocs\To-Do\api\index.php(38): require_once()
 #1 {main}
   thrown in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 17:08:34 Europe/Berlin] Request received: /To-Do/api/
+[17-Dec-2024 17:08:34 Europe/Berlin] Request method: GET
+[17-Dec-2024 17:09:35 Europe/Berlin] Request received: /To-Do/api/todos
+[17-Dec-2024 17:09:35 Europe/Berlin] Request method: GET
+[17-Dec-2024 17:09:35 Europe/Berlin] Processed URI: Array
+(
+    [0] => todos
+)
+
+[17-Dec-2024 17:09:35 Europe/Berlin] Endpoint: none
+[17-Dec-2024 17:09:35 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\To-Do\api./../vendor/autoload.php): Failed to open stream: Permission denied in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 17:09:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\To-Do\api./../vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\To-Do\api\connection.php:3
+Stack trace:
+#0 C:\xampp\htdocs\To-Do\api\index.php(38): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 17:09:39 Europe/Berlin] Request received: /To-Do/api/todos
+[17-Dec-2024 17:09:39 Europe/Berlin] Request method: POST
+[17-Dec-2024 17:09:39 Europe/Berlin] Processed URI: Array
+(
+    [0] => todos
+)
+
+[17-Dec-2024 17:09:39 Europe/Berlin] Endpoint: none
+[17-Dec-2024 17:09:39 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\To-Do\api./../vendor/autoload.php): Failed to open stream: Permission denied in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 17:09:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\To-Do\api./../vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\To-Do\api\connection.php:3
+Stack trace:
+#0 C:\xampp\htdocs\To-Do\api\index.php(38): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 17:19:31 Europe/Berlin] Request received: /To-Do/api/testgets
+[17-Dec-2024 17:19:31 Europe/Berlin] Request method: GET
+[17-Dec-2024 17:19:31 Europe/Berlin] Processed URI: Array
+(
+    [0] => testgets
+)
+
+[17-Dec-2024 17:19:31 Europe/Berlin] Endpoint: none
+[17-Dec-2024 17:19:31 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\To-Do\api./../vendor/autoload.php): Failed to open stream: Permission denied in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 17:19:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\To-Do\api./../vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\To-Do\api\connection.php:3
+Stack trace:
+#0 C:\xampp\htdocs\To-Do\api\index.php(38): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 17:19:34 Europe/Berlin] Request received: /To-Do/api/testgets
+[17-Dec-2024 17:19:34 Europe/Berlin] Request method: GET
+[17-Dec-2024 17:19:34 Europe/Berlin] Processed URI: Array
+(
+    [0] => testgets
+)
+
+[17-Dec-2024 17:19:34 Europe/Berlin] Endpoint: none
+[17-Dec-2024 17:19:34 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\To-Do\api./../vendor/autoload.php): Failed to open stream: Permission denied in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 17:19:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\To-Do\api./../vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\To-Do\api\connection.php:3
+Stack trace:
+#0 C:\xampp\htdocs\To-Do\api\index.php(38): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\To-Do\api\connection.php on line 3

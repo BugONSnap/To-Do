@@ -20,4 +20,4 @@ try {
     die("Connection failed: " . $e->getMessage());
 }
 
-return $pdo; 
+return $pdo;
