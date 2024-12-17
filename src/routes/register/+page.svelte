@@ -1,6 +1,6 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
-    import * as api from '$lib/api';
+    import * as api from '$lib/api.ts';
 
     let username = '';
     let email = '';
