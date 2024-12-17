@@ -1,0 +1,30 @@
+[17-Dec-2024 07:23:40 Europe/Berlin] Request received: /To-Do/api/auth/register
+[17-Dec-2024 07:23:40 Europe/Berlin] Request method: POST
+[17-Dec-2024 07:23:40 Europe/Berlin] Processed URI: Array
+(
+    [0] => auth
+    [1] => register
+)
+
+[17-Dec-2024 07:23:40 Europe/Berlin] Endpoint: none
+[17-Dec-2024 07:23:40 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\To-Do\api./../vendor/autoload.php): Failed to open stream: Permission denied in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 07:23:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\To-Do\api./../vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\To-Do\api\connection.php:3
+Stack trace:
+#0 C:\xampp\htdocs\To-Do\api\index.php(38): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 07:26:20 Europe/Berlin] Request received: /To-Do/api/auth/register
+[17-Dec-2024 07:26:20 Europe/Berlin] Request method: POST
+[17-Dec-2024 07:26:20 Europe/Berlin] Processed URI: Array
+(
+    [0] => auth
+    [1] => register
+)
+
+[17-Dec-2024 07:26:20 Europe/Berlin] Endpoint: none
+[17-Dec-2024 07:26:20 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\To-Do\api./../vendor/autoload.php): Failed to open stream: Permission denied in C:\xampp\htdocs\To-Do\api\connection.php on line 3
+[17-Dec-2024 07:26:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\To-Do\api./../vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\To-Do\api\connection.php:3
+Stack trace:
+#0 C:\xampp\htdocs\To-Do\api\index.php(38): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\To-Do\api\connection.php on line 3
